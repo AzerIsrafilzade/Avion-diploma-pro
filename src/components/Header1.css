@@ -1,0 +1,37 @@
+.header-content {
+  background-color: #fff;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+
+
+.header-top-container{
+ 
+  padding: 20px 20px;
+  border-bottom: 1px solid #0000001A;
+}
+
+
+.header-icon-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.avion{
+  text-decoration: none;
+  color: #22202E;
+  font-size: 24px;
+}
