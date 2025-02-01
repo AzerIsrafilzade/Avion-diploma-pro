@@ -34,13 +34,11 @@ const Ceramiccards: React.FC = () => {
   }, []);
   return (
     <div className='ceramiccard-container'>
-      <h3>New ceramics</h3>
+      <h3 className='ceramic-title'>New ceramics</h3>
       <div className='swiper-container'>
       <Swiper
     slidesPerView={3}
     spaceBetween={30}
-    autoplay={{ delay: 2500, disableOnInteraction: false }}
-    loop={true}
 
     breakpoints={{
         320: {
@@ -51,7 +49,6 @@ const Ceramiccards: React.FC = () => {
         },
         1024: {
           slidesPerView: 4,
-          spaceBetween: 1,
         },
       }}
     
@@ -70,7 +67,7 @@ const Ceramiccards: React.FC = () => {
       
 
     </Swiper>
-    <button className="view-collect">View collection</button>
+   <div className='ceramic-button'><button className="view-collect">View collection</button></div> 
       </div>
  
     </div>

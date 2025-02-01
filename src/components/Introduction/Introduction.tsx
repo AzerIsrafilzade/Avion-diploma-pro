@@ -6,7 +6,7 @@ const Introduction: React.FC = () => {
     return (
         <section className="introduction py-5">
             <div className="container">
-                <div className="intro-container">
+                <div className="intro-container ">
                     {/* Sol tərəf */}
              
                         <div className="intro-left-side">

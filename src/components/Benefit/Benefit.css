@@ -1,0 +1,79 @@
+
+.benefit{
+    margin:  0;
+    background-color: #F9F9F9;
+    padding: 40px 60px;
+  }
+  .bene-container {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .bene-side {
+    flex: none; 
+    width: 100%;
+  }
+
+.email-container {
+   display: flex;
+
+margin-top: 40px;
+} 
+
+.email-container input {
+  width: 350px;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-color: transparent;
+  color: #000;
+  font-size: 11px;
+  outline: none;
+}
+
+
+.email-container button {
+  display: flex;
+  background-color: #2A254B;
+  color: #fff;
+  padding: 15px 30px;
+  border-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+}
+.bene-side{
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.bene-side h1{
+  color: #2A254B;
+  font-size: 36px;
+  font-weight: 400;
+}
+.bene-side p{
+  color: #2A254B;
+  font-size: 16px;
+  text-align: center;
+}
+
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .benefit{
+  
+    padding: 40px 10px;
+  }
+  .bene-side h1{
+  text-align: center;
+  }
+  .email-container input {
+    width: 150px;
+  
+  }
+  
+  
+ 
+}
