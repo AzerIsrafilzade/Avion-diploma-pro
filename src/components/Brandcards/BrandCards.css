@@ -20,3 +20,7 @@
     font-size: 16px;
     color: #2A254B;
 }
+.brandcard-container img{
+    width: 20px;
+    height: 20px;
+  }
