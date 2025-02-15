@@ -5,6 +5,9 @@ import './Header1.css';
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import MobileMenu from '../Header2/MobileMenu';
 import { IoMdClose } from "react-icons/io";
+import { FiShoppingCart } from "react-icons/fi"; 
+import { useSelector } from "react-redux";
+import { RootState } from "../../../redux/store";
 
 interface Header1Props {
   changeLanguage: (lang: string) => void;
@@ -12,17 +15,19 @@ interface Header1Props {
 
 const Header1: React.FC<Header1Props> = ({ changeLanguage }) => {
   const [openMenu, setOpenMenu] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState('AZ');
+  const [selectedLanguage, setSelectedLanguage] = useState('EN');
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const handleOpenMenu = () => setOpenMenu(!openMenu);
-  const handleCloseMenu = () => setOpenMenu(!openMenu);
+  const handleOpenMenu = () => setOpenMenu(true);
+  const handleCloseMenu = () => setOpenMenu(false);
 
   const handleLanguageChange = (lang: string) => {
     setSelectedLanguage(lang.toUpperCase());
     changeLanguage(lang.toLowerCase());
     setDropdownOpen(false); 
   };
+
+  const itemCount = useSelector((state: RootState) => state.cart.items.length);
 
   return (
     <header>
@@ -36,11 +41,9 @@ const Header1: React.FC<Header1Props> = ({ changeLanguage }) => {
                 <IoMdClose onClick={handleCloseMenu} style={{ color: "#726E8D" }} />
               )}
             </div>
-          
           </div>
           <Link to="/" className="avion">Avion</Link>
           <div className="header-icon-container">
-         
             <div className="language-selector">
               <button
                 className="language-selected"
@@ -62,10 +65,17 @@ const Header1: React.FC<Header1Props> = ({ changeLanguage }) => {
                 </div>
               )}
             </div>
+
+       
+            <Link to="/cart" className="basket-icon">
+              <FiShoppingCart size={24} style={{ color: "#726E8D" }} />
+              {itemCount > 0 && <span className="cart-count">{itemCount}</span>}
+            </Link>
+
           </div>
         </div>
       </div>
-      {openMenu && <MobileMenu />}
+      {openMenu && <MobileMenu closeMenu={handleCloseMenu} />}
     </header>
   );
 };

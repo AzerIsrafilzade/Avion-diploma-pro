@@ -1,10 +1,10 @@
 [
-    {
-        "id":1,
-        "ceramic_image": "../src/assets/images/ceramiccard/dandychair.png",
-        "ceramic_context": "The Dandy chair",
+    {  "id":1,
+        "ceramic_image": "../src/assets/images/ceramiccard/dandychair2.svg",
+        "ceramic_context": "Dandy Chair",
         "ceramic_price": "£250"
     },
+    
     {
         "id":2,
         "ceramic_image": "../src/assets/images/ceramiccard/rusticvase.svg",
@@ -25,11 +25,14 @@
         "ceramic_price": "£399"
     },
 
-    {  "id":5,
-        "ceramic_image": "../src/assets/images/ceramiccard/dandychair2.svg",
-        "ceramic_context": "Dandy Chair",
+    {
+        "id":5,
+        "ceramic_image": "../src/assets/images/ceramiccard/dandychair.png",
+        "ceramic_context": "The Dandy chair",
         "ceramic_price": "£250"
     }
+
+    
    
    
 ]

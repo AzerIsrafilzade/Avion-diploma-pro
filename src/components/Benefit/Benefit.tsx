@@ -42,7 +42,7 @@ const Benefit: React.FC = () => {
 
       
           </p>
-          <form onSubmit={formik.handleSubmit}>
+          <form className='benefit-form' onSubmit={formik.handleSubmit}>
             <div className="email-container">
               <input
                 type="text"
@@ -52,7 +52,7 @@ const Benefit: React.FC = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
-              <button type="submit" className="Sign up" id="Sign-up">
+              <button type="submit" className="Signup" id="Sign-up">
               <FormattedMessage id='signup'/>
 
               </button>

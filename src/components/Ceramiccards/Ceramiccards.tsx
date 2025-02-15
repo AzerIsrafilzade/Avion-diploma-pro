@@ -47,7 +47,7 @@ const Ceramiccards: React.FC = () => {
           slidesPerView: 1,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 3,
         },
         1024: {
           slidesPerView: 4,
@@ -69,7 +69,7 @@ const Ceramiccards: React.FC = () => {
       
 
     </Swiper>
-   <Link to="/products" className='ceramic-button' style={{textDecoration:"none"}}><button className="view-collect"><FormattedMessage id='view'/></button></Link> 
+   <Link to="/products" className='ceramic-button' style={{textDecoration:"none"}}><button className="view-collectt"><FormattedMessage id='view'/></button></Link> 
       </div>
  
     </div>

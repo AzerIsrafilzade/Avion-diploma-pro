@@ -7,8 +7,7 @@
     padding: 100px 60px;
     display: flex;
     flex-direction: column;
-   
-    
+      
 }
 .popular-button{
     display: flex;
@@ -39,17 +38,63 @@
   .popularcard:first-child {
     width: 630px; 
   }
+.view-collectt{
+  background-color:#F9F9F926;
+  color: #fff;
+  padding: 15px 30px;
+  border-color: transparent;
 
-@media (min-width: 320px) and (max-width: 1180px) {
+  cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 700px) {
     .popularcards-container{
         flex-direction: column; 
+        padding: 10px;
+      
+
     }
+    .popularcard-container{
+ 
+      padding: 10px;
+  
+
+  }
+  form{
+    width: 100%;
+  }
+
     .popularcard:first-child {
         width: 100%; 
         
       }
       .popularcard {
         width: 100%; 
+
+      }
+      img{
+        width: 100%;
+        height: 250px;
+        object-fit: fill;
+      }
+  }
+  @media (min-width: 700px) and (max-width: 1000px) {
+   
+    .popularcard-container{
+ 
+      padding: 10px;
+  
+
+  }
+  form{
+    width: 100%;
+  }
+
+    .popularcard:first-child {
+        width: 50%; 
+        
+      }
+      .popularcard {
+        width: 50%; 
 
       }
       img{

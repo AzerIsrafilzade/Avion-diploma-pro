@@ -2,8 +2,8 @@ import React from 'react'
 import "./Footes.css"
 import facebook from "../../assets/images/footerem/facebook.svg";
 import instagram from "../../assets/images/footerem/instagram.svg";
-import twitter from "../../assets/images/footerem/linkedin.svg";
-import linkedin from "../../assets/images/footerem/twitter.svg";
+import twitter from "../../assets/images/footerem/twitter.svg";
+import linkedin from "../../assets/images/footerem/linkedin.svg";
 import youtube from "../../assets/images/footerem/youtube.svg";
 import { useFormik } from 'formik';
 import * as yup from 'yup';
@@ -80,14 +80,14 @@ const Footers: React.FC = () => {
 
                 <div className="footer-right">
                     <h4><FormattedMessage id='footer20'/></h4>
-                    <form onSubmit={formik.handleSubmit}>
+                    <form className="footer-form" onSubmit={formik.handleSubmit}>
                         <div className="email-container">
                             <input type="text"
                                 name="email" placeholder="your@email.com"
                                 value={formik.values.email}
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur} style={{ color: "white" }} />
-                            <button type="submit" className="footer-button" id="Sign-up">
+                            <button type="submit" className="footer-button" >
                                <FormattedMessage id='signup'/> 
                             </button>
                         </div>
